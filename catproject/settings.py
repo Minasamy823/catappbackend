@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'a(fl@y&e(kduch7o3dot4ohrhh84yk@(==8vp+e0%@e9s1^(aq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['cattyapp.herokuapp', 'cattyapp.herokuapp.com']
 
