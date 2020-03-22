@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'a(fl@y&e(kduch7o3dot4ohrhh84yk@(==8vp+e0%@e9s1^(aq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['cattyapp.herokuapp', 'cattyapp.herokuapp.com']
 
@@ -93,12 +93,8 @@ WSGI_APPLICATION = 'catproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'caty',
-        'USER' : 'caty',
-        'PASSWORD' : 'caty',
-        'HOST': 'localhost',
-        'PORT' : '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -138,7 +134,7 @@ USE_TZ = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 #
 # import dj_database_url
 # prod_db  =  dj_database_url.config(conn_max_age=500)
