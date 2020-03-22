@@ -138,7 +138,7 @@ USE_TZ = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 #
 # import dj_database_url
 # prod_db  =  dj_database_url.config(conn_max_age=500)
